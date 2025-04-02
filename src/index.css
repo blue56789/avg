@@ -1,0 +1,10 @@
+@import "tailwindcss";
+.neumorphic-card {
+  background: linear-gradient(145deg, #e8e8ea, #c8c8ca);
+  box-shadow: 10px 10px 20px #b9b9bb, -10px -10px 20px #f1f1f3;
+}
+.neumorphic-input {
+  background-color: #e8e8ea;
+  box-shadow: inset 5px 5px 10px #b9b9bb, inset -5px -5px 10px #f1f1f3;
+  border: none;
+}
