@@ -8,3 +8,10 @@
   box-shadow: inset 5px 5px 10px #b9b9bb, inset -5px -5px 10px #f1f1f3;
   border: none;
 }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

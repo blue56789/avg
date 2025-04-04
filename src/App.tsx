@@ -101,7 +101,7 @@ export default function App5() {
           </p>
         </div>
         <div className="border-b border-white w-full"></div>
-        <div className=" flex flex-col items-center p-4 gap-2 w-full max-w-lg h-full overflow-scroll">
+        <div className=" flex flex-col items-center p-4 gap-2 w-full max-w-lg h-full overflow-y-scroll no-scrollbar">
           {refs.map((ref, ind) => (
             <div
               key={ind}
