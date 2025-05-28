@@ -93,19 +93,19 @@ export default function App5() {
 
   return (
     <div className="h-dvh bg-gray-200 p-4 flex justify-center">
-      <div className="flex flex-col items-center rounded-2xl border border-white w-full max-w-sm neumorphic-card">
+      <div className="flex flex-col items-center rounded-2xl w-full max-w-sm neumorphic-card">
         <div className="text-center p-4">
           <h1 className="text-3xl font-semibold text-gray-800">Average</h1>
           <p className="text-4xl font-bold text-indigo-600 mt-2">
             {avg.toLocaleString(undefined, { maximumFractionDigits: 2 })}
           </p>
         </div>
-        <div className="border-b border-white w-full"></div>
+        {/* <div className="border-b border-white w-full"></div> */}
         <div className=" flex flex-col items-center p-4 gap-2 w-full max-w-lg h-full overflow-y-scroll no-scrollbar">
           {refs.map((ref, ind) => (
             <div
               key={ind}
-              className="border rounded-md w-full flex neumorphic-input"
+              className="pl-6 rounded-full w-full flex neumorphic-input"
             >
               <input
                 type="text"
@@ -114,10 +114,10 @@ export default function App5() {
                 value={inputs[ind]}
                 onChange={(e) => changeHandler(e, ind)}
                 onKeyDown={(e) => keyDownHandler(e, ind)}
-                className="border-none outline-none px-4 py-3 w-full"
+                className="border-none outline-none py-3 w-full"
               />
               <button
-                className="w-12 rounded-sm cursor-pointer relative flex justify-center items-center group"
+                className="w-12 pr-2 rounded-sm cursor-pointer relative flex justify-center items-center group"
                 onClick={() => deleteInput(ind)}
               >
                 <div className="w-4 h-0.5 bg-black group-hover:bg-red-400 transition all rounded-full absolute rotate-45"></div>
